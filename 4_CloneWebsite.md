@@ -34,24 +34,32 @@ First name is lowercase, the first letter of the "Feature" is uppercase. Suppose
 %git checkout -b <firstnameFeature> 
 ```
 
- The `%git checkout -b` is doing TWO commands at once and is good practice. It is creating a branch **AND** checking it out with option `-b`. To just create a branch you can use the following command: `git branch <branchName>`. However, you will have to remember to checkout the new branch. Otherwise, you will be making changes to the main/master branch, which means you would be breaking the social contract! To avoid this painful mistake of forgetting to switch to a newly created branch when creating a new branch just use: <br> `%git checkout -b`
+<img src="images/GitCheckout.jpg" width="60%" length="60%">
+
+The `%git checkout -b` is doing TWO commands at once and is good practice. It is creating a branch **AND** checking it out with option `-b`. 
+
+To just create a branch you can use the following command: `git branch <branchName>`. However, you will have to remember to checkout the new branch. Otherwise, you will be making changes to the main/master branch, which means you would be breaking the social contract! To avoid this painful mistake of forgetting to switch to a newly created branch when creating a new branch just use: <br> `%git checkout -b`
  
- To switch to a branch you will use `git checkout <branchName>`. We will use this later on. 
+To just switch to a branch use: `git checkout <branchName>`. We will use this later on. 
  
-### 5. Checkout the new branch: 
-STOP! Always check to see what branch you are on. To check to see what branch you are working on enter the following command in Terminal:  
+### 5. Check branch status: 
+Always check to see what branch you are on. To check to see what branch you are working on enter the following command in Terminal:  
  
 ```
 %git status 
 ```
  <img src="images/gitStatus.jpg" width="40%" length="40%">  
  
-You created a branch, but you must check it out. If you don't change to the branch you will be making changes to the main branch and your changes will NOT be accepted when submitting your changes. Essentially, you will have lost your code 😢. <br>
+If after you check the status you notice you are not on correct branch, STOP! To checkout (switch) to the correct branch enter the following: <br>
  
 ```
 %git checkout <yourfirstnameFeature> 
 ```
-### 6. Now you can push this branch up to GitHub:  
+Check your status again. This my seem repetitive, but when first starting to work with branches, many developers forget to switch to the newly created branch. If you don't change to the correct branch you will be making changes to the main/master branch and your changes will NOT be accepted. Essentially, you will have lost your chnages 😢.  
+
+### 6. Now you can push this branch up to GitHub:
+Let's make sure that we push this branch to GitHub. That way we can create a pull request to have our changes merged to the main/master repository later on. 
+
 ```
 %git push –u origin <branch name> 
 ```
