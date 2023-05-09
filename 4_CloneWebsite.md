@@ -21,6 +21,10 @@ This repository will be a simple web page that everyone contributes to. Contribu
 ```
 %git clone https://github.com/TechCohort14/TA100-GitFlowWebsite.git 	 
 ```
+At this point you can move into the repository folder you created:
+```
+%cd TA100-GitFlowWebsite
+```
 
 ### 4.  Create a branch for your changes:  
 Once you have a clone of the repository you will be on the main/master branch. Best practice is to NOT make changes to the main/master branch. Why is it so important to not make changes to the main branch? One word: deployable. It is your production code, ready to roll out into the world. The master/main branch is meant to be stable, and it is the social contract of open source software to never, ever push anything to master that is not tested, or that breaks the build. The entire reason GitHub works is that it is always safe to work from the master.
