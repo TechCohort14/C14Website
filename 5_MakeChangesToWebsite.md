@@ -51,7 +51,7 @@ You will update the following:
 As you make changes review your work. Save changes and refresh the browser to see your changes. Once you are satisfied with your changes you can submit for it to get merged with the main repository. 
 
 ### 6. Stage, Commit, and Push changes to your branch
-if ready to have your branch changes to merge with main repository you will have to stage, commit, and push to the remote repository.  
+Once you are ready to merge your branch changes with the main repository, you will need to stage, commit, and push to the remote repository.  
 
 Stage your files: 
 
@@ -69,7 +69,7 @@ Push your branch changes to the remote repository:
 ```
 %git push
 ```
-Go to the website project repository in GitHub. While in GitHub click on branches:
+Go to the website project repository in GitHub. While in GitHub, click on "branches":
 
 <img src="images/branchesLink.PNG" width="60%" length="60%"> 
 
